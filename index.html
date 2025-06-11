@@ -1,50 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>My Simple Netflix-like Page</title>
-<style>
-body {
-  background-color: #141414; /* Netflix-like dark background */
-  color: white;
-  font-family: sans-serif;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-.header {
-  text-align: center;
-  padding: 20px 0;
-}
-.movie-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.movie {
-  width: 200px;
-  margin-bottom: 20px;
-}
-.movie img {
-  width: 100%;
-}
-</style>
-</head>
-<body>
-<div class="container">
-  <div class="header">
-    <h1>My Netflix Clone</h1>
-  </div>
-  <div class="movie-list">
-    <div class="movie">
-      <img src="movie1.jpg" alt="Movie 1">
+    <head>
+        <title> Netflix</title>
+        <meta charset="utf-8">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/3dfcf632cc.css">
+        <link href="./css/style.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="Images/icone.png">
+    </head>
+    <body>   
+      <header>
+          <div class="center">
+              <div class="header-left">
+                  <a href=""><img src="../Netflix/Images/netflix.png"/></a>
+                  <div class="menu-header">
+                    <ul>
+                        <li><a href ="">Inicio</a></li>
+                        <li><a href ="">Séries</a></li>
+                        <li><a href ="">Filmes</a></li>
+                        <li><a href ="">Adicionados Recentemente</a></li>
+                        <li><a href ="">Minha Lista</a></li>
+                    </ul>
+                  </div><!---menu-header-->
+              </div><!---header right-->
+              <div class="header-right">
+                  <div class="search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div><!---search-->
+                <a href="">INFANTIL</a>
+                <i class="fa fa-gift" aria-hidden="true"></i>
+                <div class="notifications">
+                    <div class="circle-notifications">
+                        <span>10</span>
+                    </div><!---circle-notifications-->
+                     <i class="fa fa-bell" aria-hidden="true"></i>
+                </div><!--notificações-->
+            </div><!---header-right-->
+              <div class="clear"></div>
+          </div><!---center-->
+      </header>
+      <section class="destaque">
+        <div class="overlay"></div><!----overlay-->
+        <div class="texto-destaque">
+            <h1 class="h3 d-none d-md-none md-nowrap d-sm-flex d-xl-flex d-lg-flex">
+                <img class="logo d-none d-md-block" src="Images/sw.png">                    
+                </h1>
+                        <span class="mr-3">2008</span>
+                        <span class="mr-3">|</span>
+                        <span class="mr-3 L">+16</span>
+                         <span class="mr-3">|</span>
+                        <span class="mr-3">60 min</span>
+              </small>
+            <h3>Assista A 6ª Temporada Completa </h3>
+            <p>Michael Scofield conta com a ajuda de sarah e lincoln em mais uma aventura</p>
+            <br/>
+            <a href=""><i class="fa fa-play" aria-hidden="true"></i> Assistir</a>
+            <a href=""><i class="fa fa-plus" aria-hidden="true"></i> </i>Minha Lista</a>
+            <a href=""><i class="fa fa-info-circle" aria-hidden="true"></i> </i>Mais Informações</a>              
+        </div><!----texto-destaque-->
+      </section><!--destaque-->
+      <div id="main" class="main">
+        <div class="centro">
+        </div>
     </div>
-    <div class="movie">
-      <img src="movie2.jpg" alt="Movie 2">
+    <footer>
+        Copyright &copy; 2020 Desenvolvido por
+        <a href="https://www.facebook.com/Madenxx/" target="_blank">Alécio L. Medeiros</a>.    
+        <a href="https://www.linkedin.com/in/madenx" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/M4deN" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/madenx/" target="_blank"><i class="fab fa-instagram"></i></a>        
     </div>
-    <!-- Add more movie divs here -->
-  </div>
-</div>
-</body>
+</footer>
+    <script src="movie.js">
+    </script>
+    </body>
 </html>
